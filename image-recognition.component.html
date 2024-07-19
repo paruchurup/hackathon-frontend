@@ -1,0 +1,29 @@
+
+<div class="row">
+    <div class="col-md-6">
+        <input type="file" (change)="onFileChanged($event)">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" (click)="onUpload()">
+            Upload
+        </button>
+    </div>
+
+
+</div>
+<hr />
+<div class="container row">
+    <div class="col-md-12">
+        <div *ngIf=message>
+            <table>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Relation</th>
+                <tr>
+                    <td>{{message.name}}</td>
+                    <td>{{message.phone}}</td>
+                    <td>{{message.relation}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
